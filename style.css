@@ -1,10 +1,25 @@
 html {
     font-size: 1rem;
+    height: 100%;
   }
 
 body {
     font-family: 'EB Garamond', serif;
+    height: 100%;
+    color: #fff3d9;
+    /* background-image: url(Assets/jumboLoopBG.mp4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; */
 }
+
+.flex-wrapper {
+    display: flex;
+    min-height: 95vh;
+    flex-direction: column;
+    justify-content: space-between
+  }
 
 .row {
     padding-right: 0px;
@@ -14,15 +29,62 @@ body {
 nav {
     border-bottom-style: double;
     border-color:#fff3d9;
+    background-color: #061326;
 }
 
+main {
+    z-index: 2;
+    position: relative;
+}
+
+.jumbotron video {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    -webkit-transform: scaleX(1.2); 
+  }
+  
+#videoBG {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    
+    background-size: cover;
+  }
+
+#portContent {
+    background-color: #061326;
+    border-style: double;
+    border-color:#fff3d9;
+}
+
+.contactContent {
+    background-color: #061326;
+    border-style: double;
+    border-color:#fff3d9;
+    widows: auto;
+}
+  
+.jumboText {
+    z-index: 2;
+    position: relative;
+  }
+
 .jumbotron {
-    background: url("Assets/32-329853_grey-wallpaper-hd.jpg");
     max-width: 100%;
     height: 275px;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.0);
     
 }
    
@@ -31,20 +93,12 @@ header {
     border-bottom-style: double; 
 }
 
-header H1 {
-    
-}
-
-/* #headerTextPosition {
-    position: relative;
-    right: 200px;
-    bottom: 25px;
-} */
-
 #header {
     border-bottom-style: solid;
     border-color:#303e39; 
 }
+
+
 
 #biosmall {
     background: url("Assets/headshotSmall.png");
@@ -69,12 +123,12 @@ header H1 {
 }
 
 #biotext {
-    background: url("Assets/textBackgroun.png");
-    /* max-width: 100%; */
+    background: url("Assets/textBackground.PNG");
     background-position: center; 
     background-repeat: no-repeat;
-    /* background-size: contain; */
+    
     color: #fff3d9;
+    background-size: cover;
 }
 
 #interestsmall {
@@ -85,6 +139,7 @@ header H1 {
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-style: ridge;
+    border-top-style: ridge;
     border-color:#fff3d9;
 }
 
@@ -100,12 +155,13 @@ header H1 {
 }
 
 #interesttext {
-    background: url("Assets/textBackgroun.png");
+    background: url("Assets/textBackground.PNG");
     /* max-width: 100%; */
     background-position: center; 
     background-repeat: no-repeat;
     /* background-size: contain; */
     color: #fff3d9;
+    background-size: cover;
 }
 
 #goalsmall {
@@ -116,6 +172,7 @@ header H1 {
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-style: ridge;
+    border-top-style: ridge;
     border-color:#fff3d9;
 }
 
@@ -131,12 +188,13 @@ header H1 {
 }
 
 #goalstext {
-    background: url("Assets/textBackgroun.png");
+    background: url("Assets/textBackground.PNG");
     /* max-width: 100%; */
     background-position: center; 
     background-repeat: no-repeat;
     /* background-size: contain; */
     color: #fff3d9;
+    background-size: cover;
 }
 
 .break {
@@ -144,12 +202,22 @@ header H1 {
     height: 0;
   }
 
+
 #sticky-footer {
+    background-color: #061326;
     flex-shrink: 0;
     /* position: fixed; */
 }
 
 br{ display: none; }
+
+.img-fluid {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
 
 @media only screen and (max-width: 800px) {
     .jumbotron {
@@ -158,8 +226,20 @@ br{ display: none; }
 }
 
 @media screen and (max-width: 800px) {
-    header h1{
-        font-size: smaller;
+    .headerh1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #contactHead {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .headerp {
+        font-size: 16px;
     }
 }
 
@@ -168,7 +248,7 @@ br{ display: none; }
       height: 175px;
     }
     #bio {
-        height: 200px;
+        height: 250px;
 
     }
     #interests {
@@ -176,6 +256,15 @@ br{ display: none; }
     }
     #goals {
         height: 200px;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    main p {
+        font-size: 1.2em;
+    }
+    main li {
+        font-size: 1.2em;
     }
 }
 

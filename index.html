@@ -21,7 +21,7 @@
 </head>
 
 <body >
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark flex-row sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark flex-row sticky-top">
         <a href class="navbar-brand d-flex w-50 mr-0" style="font-size: 2em;">Matt Baber</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCenter">
             <span class="navbar-toggler-icon"></span>
@@ -29,13 +29,13 @@
         <div class="navbar-collapse collapse w-100" id="navbarCenter">
             <ul class="navbar-nav mx-sm-auto ">
                 <li class="nav-item">
-                    <a class="nav-link align-middle" href="#">Contact Me</a>
+                    <a class="nav-link align-middle" href="contact.html">Contact Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Bio</a>
+                    <a class="nav-link" href="index.html">Bio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link align-middle" href="#">Portfolio</a>
+                    <a class="nav-link align-middle" href="portfolio.html">Portfolio</a>
                 </li>
             </ul>
         </div>
@@ -43,11 +43,19 @@
     </nav>
 
  
-    <header class="container-fluid m-0 p-0 jumbotron rounded-0 p-1 mb-0 d-flex flex-wrap align-content-center justify-content-center align-content-md-end justify-content-md-start">
+    <header class="container-fluid m-0 p-0 jumbotron rounded-0 p-1 mb-0 d-flex flex-wrap align-items-center justify-content-center align-content-md-end justify-content-md-start">
         <div id="headerTextPosition">  
-            <h1 class="display-1 pl-3 pl-sm-0 ml-5">Welcome</h1>
+            <video id="vid" autoplay="true" loop="true" muted>
+                <source src="Assets/jumboLoopBG.mp4"  type="video/mp4" />
+            </video>
+            <script>
+                document.getElementById('vid').play();
+            </script>
+            <div class="jumboText">
+            <h1 class="headerh1 text-center display-1 ml-md-5">Welcome</h1>
             <div class="break "></div>
-            <p class="lead mb-5 ml-5 "> Read about me, check out some of <br class="break1"/>my projects, and feel free to contact me.</p> 
+            <p class="lead headerp mb-5 ml-5 "> Read about me, check out some of <br class="break1"/>my projects, and feel free to contact me.</p> 
+            </div>
         </div>
         </header>
 
@@ -57,10 +65,10 @@
                 <!-- <img src="Assets/headshotSmall.png" alt=""> -->
             </div>
         </div>
-        <div class="row d-flex flex-row-reverse" id="bio">
-            <div class="col-12 col-md-4 col-lg-3 m-md-5  border rounded justify-content-center align-items-center" id="biotext"> 
+        <div class="row d-flex flex-row-reverse m-auto" id="bio">
+            <div class="col-12 col-md-4 col-lg-3  m-md-5 border rounded justify-content-center align-items-center" id="biotext"> 
                 <h3 class="mt-3 text-center">My Bio</h3>
-                <p class="m-3 m-md-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid magnam rem optio sunt pariatur tempore placeat dolor distinctio ex? Unde sunt voluptatum animi magnam quae libero maxime quas repudiandae alias?</p>
+                <p class="m-3 m-md-auto">Hello, My name is Matt Baber and I am 33 years old. I live in Euclid, Ohio with my wife Emily, and our daughter Dottie and our dog and cat, Rudy and Snacky. My whole adult life I have worked as a Chef, and have made the decision to leave that career path and learn how to program.</p>
             </div>
         </div>
         <div class="row d-md-none">
@@ -68,10 +76,28 @@
                 <!-- <img src="Assets/intrestsSmall.png" alt=""> -->
             </div>
         </div>
-        <div class="row" id="interests">
+        <div class="row m-auto" id="interests">
             <div class="col-12 col-md-4 col-lg-3 m-md-5 border rounded justify-content-center align-items-center" id="interesttext"> 
-                <h3 class="mt-3 text-center">interests</h3>
-                <p class="m-3 m-md-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid magnam rem optio sunt pariatur tempore placeat dolor distinctio ex? Unde sunt voluptatum animi magnam quae libero maxime quas repudiandae alias?</p>
+                <h3 class="mt-3 text-center">My Interests</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="">
+                                <li>Hiking with my Dog</li>
+                                <li>Foraging</li>
+                                <li>Cooking</li>
+                                <li>Fermentation</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class=""> 
+                                <li>Gardening</li>
+                                <li>Building & Design</li>
+                                <li>Games</li>
+                                <li>Sewing</li>
+                            </ul>
+                        </div>
+            
+                    </div>
             </div>
         </div>
         <div class="row d-md-none">
@@ -79,19 +105,19 @@
                 <!-- <img src="Assets/goalsSmall.png" alt=""> -->
             </div>
         </div>
-        <div class="row d-flex flex-row-reverse" id="goals">
+        <div class="row d-flex flex-row-reverse m-auto" id="goals">
             <div class="col-12 col-md-4 col-lg-3 m-md-5 border rounded justify-content-center align-items-center" id="goalstext"> 
-                <h3 class="mt-3 text-center">My Bio</h3>
-                <p class="m-3 m-md-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid magnam rem optio sunt pariatur tempore placeat dolor distinctio ex? Unde sunt voluptatum animi magnam quae libero maxime quas repudiandae alias?</p>
+                <h3 class="mt-3 text-center">My Goals</h3>
+                <p class="m-3 m-md-auto">To further my knowledge of all of the programming languages and libraries used to develop web applications, then to obtain a position actively developing in the web develoment field.</p>
             </div>
         </div>
     </main>
 
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <footer id="sticky-footer" class="py-4 card-footer text-white-50">
         <div class="container text-center">
           <small>Copyright &copy; Your Website</small>
         </div>
-      </footer>
+    </footer>
 
 
 
