@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
- 
+
     <!-- Bootsrap CDN -->
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
- integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-<!-- Google Fonts CDN  -->
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts CDN  -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- Font Awesome CDN  -->
-<script src="https://kit.fontawesome.com/6acb0d9fa3.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN  -->
+    <script src="https://kit.fontawesome.com/6acb0d9fa3.js" crossorigin="anonymous"></script>
 
-<!-- Local Style Sheet -->
-<link rel="stylesheet" href="style.css">
+    <!-- Local Style Sheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
-<body >
-
-     <nav class="navbar navbar-expand-sm navbar-dark flex-row sticky-top">
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark flex-row sticky-top">
         <a href class="navbar-brand d-flex w-50 mr-0" style="font-size: 2em;">Matt Baber</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCenter">
             <span class="navbar-toggler-icon"></span>
@@ -40,19 +40,24 @@
                 </li>
             </ul>
         </div>
-        <div class="d-flex w-50"><!-- placeholder to keep links centered--></div>
+        <div class="d-flex w-50">
+            <!-- placeholder to keep links centered-->
+        </div>
     </nav>
 
+    <!-- video background -->
     <video id="videoBG" autoplay="true" loop="true" muted>
-        <source src="Assets/jumboLoopBG.mp4"  type="video/mp4" />
+        <source src="Assets/jumboLoopBG.mp4" type="video/mp4" />
     </video>
 
+    <!-- wrapper to push footer to bottom of page  -->
     <main class="container flex-wrapper">
+        <!-- portfolio content, will include carousel modal for photos and when i develop more apps, links will be include to the hosted pages and their github repos -->
         <div id="portContent" class="row  m-5  justify-content-center border rounded">
             <div class="col-lg-10 mt-lg-5 p-0">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3 p-0 border">
-                        <img src="Assets/headshotPort.png" class="img-fluid" alt="">
+                        <img src="Assets/portfolio/headshotPort.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 p-0 border">
                         <img src="Assets/portfolio/rudyWithChicken.png" class="img-fluid" alt="">
@@ -97,28 +102,16 @@
                     </div>
                 </div>
             </div>
-        </div>       
-     </main>
+        </div>
+    </main>
 
     <footer id="sticky-footer" class="py-4 text-white-50">
         <div class="container text-center">
-          <small>Copyright &copy; Your Website</small>
+            <small>Designed by Matt Baber</small>
         </div>
-      </footer>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    <!-- js and jquery scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -130,4 +123,5 @@
         crossorigin="anonymous"></script>
 
 </body>
+
 </html>

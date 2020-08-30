@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matt Baber</title>
- 
+
     <!-- Bootsrap CDN -->
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
- integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-<!-- Google Fonts CDN  -->
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts CDN  -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- Font Awesome CDN  -->
-<script src="https://kit.fontawesome.com/6acb0d9fa3.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN  -->
+    <script src="https://kit.fontawesome.com/6acb0d9fa3.js" crossorigin="anonymous"></script>
 
-<!-- Local Style Sheet -->
-<link rel="stylesheet" href="style.css">
+    <!-- Local Style Sheet -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body >
+<body>
     <nav class="navbar navbar-expand-sm navbar-dark flex-row sticky-top">
         <a href class="navbar-brand d-flex w-50 mr-0" style="font-size: 2em;">Matt Baber</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCenter">
@@ -39,26 +40,35 @@
                 </li>
             </ul>
         </div>
-        <div class="d-flex w-50"><!-- placeholder to keep links centered--></div>
+        <div class="d-flex w-50">
+            <!-- placeholder to keep links centered-->
+        </div>
     </nav>
 
- 
-    <header class="container-fluid m-0 p-0 jumbotron rounded-0 p-1 mb-0 d-flex flex-wrap align-items-center justify-content-center align-content-md-end justify-content-md-start">
-        <div id="headerTextPosition">  
+    <!-- jumbotron with video set to lowest z index for background effect -->
+    
+    <header
+        class="container-fluid m-0 p-0 jumbotron rounded-0 p-1 mb-0 d-flex flex-wrap align-items-center justify-content-center align-content-md-end justify-content-md-start">
+        <div id="headerTextPosition">
             <video id="vid" autoplay="true" loop="true" muted>
-                <source src="Assets/jumboLoopBG.mp4"  type="video/mp4" />
+                <source src="Assets/jumboLoopBG.mp4" type="video/mp4" />
             </video>
             <script>
                 document.getElementById('vid').play();
             </script>
             <div class="jumboText">
-            <h1 class="headerh1 text-center display-1 ml-md-5">Welcome</h1>
-            <div class="break "></div>
-            <p class="lead headerp mb-5 ml-5 "> Read about me, check out some of <br class="break1"/>my projects, and feel free to contact me.</p> 
+                <h1 class="headerh1 text-center display-1 ml-md-5">Welcome</h1>
+                <div class="break "></div>
+                <p class="lead headerp mb-5 ml-5 "> Read about me, check out some of <br class="break1" />my projects,
+                    and feel free to contact me.</p>
             </div>
         </div>
-        </header>
+    </header>
 
+    
+    
+    <!-- Main content, includes text box with long photo on medium and up, responds to small screen by unhiding smaller photos from between the text box -->
+    
     <main class="container-fluid p-0 m-0">
         <div class="row d-md-none">
             <div class="col-12" id="biosmall">
@@ -66,9 +76,13 @@
             </div>
         </div>
         <div class="row d-flex flex-row-reverse m-auto" id="bio">
-            <div class="col-12 col-md-4 col-lg-3  m-md-5 border rounded justify-content-center align-items-center" id="biotext"> 
+            <div class="col-12 col-md-4 col-lg-3  m-md-5 border rounded justify-content-center align-items-center"
+                id="biotext">
                 <h3 class="mt-3 text-center">My Bio</h3>
-                <p class="m-3 m-md-auto">Hello, My name is Matt Baber and I am 33 years old. I live in Euclid, Ohio with my wife Emily, and our daughter Dottie and our dog and cat, Rudy and Snacky. My whole adult life I have worked as a Chef, and have made the decision to leave that career path and learn how to program.</p>
+                <p class="m-3 m-md-auto">Hello, My name is Matt Baber and I am 33 years old. I live in Euclid, Ohio with
+                    my wife Emily, and our daughter Dottie and our dog and cat, Rudy and Snacky. My whole adult life I
+                    have worked as a Chef, and have made the decision to leave that career path and learn how to
+                    program.</p>
             </div>
         </div>
         <div class="row d-md-none">
@@ -77,27 +91,28 @@
             </div>
         </div>
         <div class="row m-auto" id="interests">
-            <div class="col-12 col-md-4 col-lg-3 m-md-5 border rounded justify-content-center align-items-center" id="interesttext"> 
+            <div class="col-12 col-md-4 col-lg-3 m-md-5 border rounded justify-content-center align-items-center"
+                id="interesttext">
                 <h3 class="mt-3 text-center">My Interests</h3>
-                    <div class="row">
-                        <div class="col-6">
-                            <ul class="">
-                                <li>Hiking with my Dog</li>
-                                <li>Foraging</li>
-                                <li>Cooking</li>
-                                <li>Fermentation</li>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul class=""> 
-                                <li>Gardening</li>
-                                <li>Building & Design</li>
-                                <li>Games</li>
-                                <li>Sewing</li>
-                            </ul>
-                        </div>
-            
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="">
+                            <li>Hiking with my Dog</li>
+                            <li>Foraging</li>
+                            <li>Cooking</li>
+                            <li>Fermentation</li>
+                        </ul>
                     </div>
+                    <div class="col-6">
+                        <ul class="">
+                            <li>Gardening</li>
+                            <li>Building & Design</li>
+                            <li>Games</li>
+                            <li>Sewing</li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
         </div>
         <div class="row d-md-none">
@@ -106,36 +121,23 @@
             </div>
         </div>
         <div class="row d-flex flex-row-reverse m-auto" id="goals">
-            <div class="col-12 col-md-4 col-lg-3 m-md-5 border rounded justify-content-center align-items-center" id="goalstext"> 
+            <div class="col-12 col-md-4 col-lg-3 m-md-5 border rounded justify-content-center align-items-center"
+                id="goalstext">
                 <h3 class="mt-3 text-center">My Goals</h3>
-                <p class="m-3 m-md-auto">To further my knowledge of all of the programming languages and libraries used to develop web applications, then to obtain a position actively developing in the web develoment field.</p>
+                <p class="m-3 m-md-auto">To further my knowledge of all of the programming languages and libraries used
+                    to develop web applications, then to obtain a position actively developing in the web develoment
+                    field.</p>
             </div>
         </div>
     </main>
 
     <footer id="sticky-footer" class="py-4 card-footer text-white-50">
         <div class="container text-center">
-          <small>Copyright &copy; Your Website</small>
+            <small> Designed by Matt Baber</small>
         </div>
     </footer>
 
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-    
+<!-- js and jquery scripts  -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -147,4 +149,5 @@
         crossorigin="anonymous"></script>
 
 </body>
+
 </html>
